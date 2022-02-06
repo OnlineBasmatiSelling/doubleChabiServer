@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/OnlineBasmatiSelling/doubleChabiServer#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "http": "0.0.1-security",
