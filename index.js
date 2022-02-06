@@ -22,12 +22,13 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 var cron = require('node-cron');
+const product = require('./Modals/product');
 
 db.once('open', function() {
     
     app.get("/getProducts", async function(req,res){
         
-        let promoDetails = await promo.find({userId:req.query.userId,date:{$lt:new Date(req.query.date)}}).limit(10).sort({ $natural: -1 });
+        let productList = await product.find({});
         res.json({statusCode:200, list:promoDetails });
     })
 
