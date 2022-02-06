@@ -17,7 +17,6 @@ app.use("/", router);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
-var cron = require('node-cron');
 const product = require('./Modals/product');
 
 db.once('open', function() {
