@@ -24,7 +24,7 @@ db.once('open', function() {
     app.get("/getProducts", async function(req,res){
         
         let productList = await product.find({});
-        res.json({statusCode:200, list:promoDetails });
+        res.json({statusCode:200, list:productList });
     })
 
     const PORT = process.env.PORT || 80;
