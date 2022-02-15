@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const cors = require('cors');
 app.use(cors({ origin: true }));
 
-mongoose.connect('mongodb+srv://gourav:BPPiQ76BIJYIcM6X@cluster0.2assr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://xyz/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true});
 
 
 app.use("/", router);
